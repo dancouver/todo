@@ -1,0 +1,36 @@
+/* Style for task rows */
+.task-row {
+    transition: background-color 0.3s;
+}
+
+/* Example colors for task types */
+.task-row.meeting { background-color: #ffebcc; }   /* Pastel orange */
+.task-row.call { background-color: #cce8ff; }     /* Pastel blue */
+.task-row.email { background-color: #e6ffe6; }    /* Pastel green */
+
+/* Highlight for overdue tasks */
+.highlight-id {
+    background-color: #ff9999; /* Light red background */
+}
+
+/* Highlight for selected task */
+.highlight {
+    font-weight: bold;
+    background-color: #f0f8ff !important; /* Light blue background */
+}
+
+/* Style for bricks representing types */
+.brick {
+    display: inline-block;
+    padding: 10px;
+    margin: 5px;
+    color: white;
+    border-radius: 5px;
+    text-align: center;
+}
+
+/* Wrapper to enable scrolling in the table */
+.table-wrapper {
+    max-height: 400px; /* Adjust height as needed */
+    overflow-y: auto;
+}
